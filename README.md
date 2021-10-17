@@ -13,3 +13,8 @@ https://www.npmjs.com/package/ngx-infinite-scroll
 - Open the nodejs command and do `npm run start-wiremock` (Make sure port 5001 not used by other apps/process)
 - Open another nodejs command do `npm run start`
 - Browse the app http://localhost:4200/ 
+
+[![GitHub pull-requests closed](https://img.shields.io/github/issues-pr-closed/Naereen/StrapDown.js.svg)](https://GitHub.com/Naereen/StrapDown.js/pull/)
+[![Visual Studio Code](https://img.shields.io/badge/--007ACC?logo=visual%20studio%20code&logoColor=ffffff)](https://code.visualstudio.com/)
+[![Npm package license](https://badgen.net/npm/llicense/discord.js)](https://npmjs.com/package/discord.js)
+
