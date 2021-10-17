@@ -9,7 +9,7 @@ https://www.npmjs.com/package/ngx-infinite-scroll
 - Run `npm install`
 - Download wiremock standalone from http://wiremock.org/docs/download-and-installation/
 - Rename the the jar file to wm.jar
-- Make sure JRE installed.
+- Make sure JRE installed
 - Open the nodejs command and do `npm run start-wiremock` (Make sure port 5001 not used by other apps/process)
 - Open another nodejs command do `npm run start`
-
+- Browse the app http://localhost:4200/ 
