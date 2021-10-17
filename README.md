@@ -6,7 +6,7 @@ https://www.npmjs.com/package/ngx-infinite-scroll
 ## Steps to run the app
 
 - Clone the branch
-- run `npm install`
+- Run `npm install`
 - Download wiremock standalone from http://wiremock.org/docs/download-and-installation/
 - Rename the the jar file to wm.jar
 - Make sure JRE installed.
