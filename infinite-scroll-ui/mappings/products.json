@@ -1,0 +1,10 @@
+{
+    "request": {
+        "urlPath": "/api/products/getproducts",
+        "method": "GET"
+    },
+    "response": {
+        "status": 200,
+        "bodyFileName": "products-list.json"
+    }
+}
