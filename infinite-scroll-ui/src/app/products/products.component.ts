@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
 import { Product } from './product.model';
 import { ProductsService } from './service/products.service';
 
@@ -8,11 +9,18 @@ import { ProductsService } from './service/products.service';
   styleUrls: ['./products.component.css']
 })
 export class ProductsComponent implements OnInit {
-  products: Product[];
+  products: Product[] = [];
   constructor(private productService: ProductsService) { }
 
   ngOnInit(): void {
-    this.products = this.productService.getProducts();
+   this.productService.getProducts().subscribe( (data: Product[]) => {
+    this.products.push(...data);
+   });
   }
 
+  onScroll() {
+    this.productService.getProducts().subscribe( (data: Product[]) => {
+      this.products.push(...data);
+     });
+  }
 }

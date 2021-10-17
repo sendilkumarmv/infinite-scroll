@@ -1,4 +1,13 @@
-<h3>Products</h3>
-<ul>
-    <li *ngFor="let product in products">{{ product.id }}</li>
-</ul>
+<div class="search-results" infiniteScroll [infiniteScrollDistance]="2" [infiniteScrollThrottle]="50"
+    (scrolled)="onScroll()">
+    <h3>Products</h3>
+    <table style="width:100%">
+        <tr *ngFor="let product of products;let i=index">
+            <td>{{ i }}</td>
+            <td>{{ product.productId }}</td>
+            <td>{{ product.productName }}</td>
+            <td>{{ product.productPrice }}</td>
+            <td>{{ product.productStock }}</td>
+        </tr>
+    </table>
+</div>
